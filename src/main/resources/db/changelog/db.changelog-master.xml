@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+<changeSet id="202010211812" author="Stepan Tryfanenko">
+    <createTable tableName="number">
+        <column name="id" type="bigint">
+            <constraints primaryKey="true" primaryKeyName="numb_id_pk" />
+        </column>
+        <column name="numb" type="bigint">    
+        </column>
+        
+    </createTable>
+   
+    <!-- <addAutoIncrement tableName="number" columnName="id" columnDataType="bigint" startWith="1" incrementBy="1" /> -->
+    
+</changeSet>
+</databaseChangeLog>
